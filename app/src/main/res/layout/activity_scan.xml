@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".scan">
+
+    <com.budiyev.android.codescanner.CodeScannerView
+        android:id="@+id/scanner_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:autoFocusButtonColor="@android:color/white"
+        app:autoFocusButtonVisible="true"
+        app:flashButtonColor="@android:color/white"
+        app:flashButtonVisible="true"
+        app:frameAspectRatioHeight="1"
+        app:frameAspectRatioWidth="1"
+        app:frameColor="@android:color/white"
+        app:frameCornersRadius="0dp"
+        app:frameCornersSize="50dp"
+        app:frameSize="0.75"
+        app:frameThickness="2dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:maskColor="#77000000">
+
+
+    </com.budiyev.android.codescanner.CodeScannerView>
+
+    <Button
+        android:id="@+id/addContact"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qrResults3"
+        android:layout_centerHorizontal="true"
+        android:background="@color/custom_blue"
+        android:text="@string/add_to_contact"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="intentToContacts"
+
+        />
+
+    <TextView
+        android:id="@+id/qrResults"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+        android:text="First Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        />
+    <TextView
+    android:id="@+id/qrResults2"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+        android:text="Second Name"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qrResults"
+    />
+    <TextView
+        android:id="@+id/qrResults3"
+        android:layout_width="395dp"
+        android:layout_height="38dp"
+        android:text="Number"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/qrResults2"
+        />
+
+
+
+
+
+</RelativeLayout>
